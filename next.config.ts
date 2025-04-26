@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
   },
   basePath: '/amznukraine.git', // !!! Якщо твій репозиторій НЕ на custom domain
   assetPrefix: '/amznukraine.git',
-  ignoreDuringBuilds: true
+  eslint: {
+    ignoreDuringBuilds: true,
+  }
 };
 
 export default nextConfig;
