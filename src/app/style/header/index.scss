@@ -1,0 +1,63 @@
+.header{
+    padding: 11px 33px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    &__logo{
+        margin: auto 0;
+    }
+    &__menu{
+        display: flex;
+        gap: 40px;
+        &-nav{
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            margin: auto 0;
+            &-link{
+                text-decoration: none;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        &-button{
+            margin: auto 0;
+        }
+    }
+    &__burger{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        &-nav{
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            list-style: none;
+            padding: 0;
+            &-link{
+                text-decoration: none;
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        &-button{
+            max-width: fit-content;
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    .ui{
+        &__burger-active{
+            display: block !important;
+        }
+    }
+    .header{
+        &__menu{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.ui{
+    &__button{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #B88E2F;
+        padding: 8px 32px;
+        text-align: center;
+    }
+    &__burger-active{
+        display: none;
+    }
+}

@@ -1,0 +1,118 @@
+.deal{
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    &__image{
+        img{
+            height: auto;
+            max-width: 100%;
+        }
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-block{
+            height: auto;
+            max-width: 600px;
+            margin: auto auto auto 20px;
+            border-radius: 10px;
+            background-color: #FFF3E3;
+            padding: 40px 20px;
+            h1{
+                font-size: 32px;
+                font-weight: 600;
+                color: #B88E2F;
+                line-height: 40px;
+
+            }
+            p{
+                font-size: 18px;
+                line-height: 20px;
+                color: #333;
+            }
+            &-button{
+                max-width: fit-content;
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px){
+    .deal{
+        &__image{
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__info{
+            position: absolute;
+            top: calc(50% - 10vh);
+            right: 20px;
+            &-block{
+                margin: 0;
+            }
+        }   
+    }
+}
+@media screen and (max-width: 650px){
+    .deal{
+        &__image{
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__info{
+            position: absolute;
+            bottom: calc(20vh + 50%);
+            right: 0;
+            &-block{
+                margin: 0;
+                padding: 20px 10px;
+                h1{
+                    font-size: 28px;
+                    line-height: 40px;
+    
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }   
+    }
+}
+@media screen and (max-width: 440px){
+    .deal{
+        &__image{
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__info{
+            position: absolute;
+            top: 30vh;
+            right: 0;
+            &-block{
+                margin: 0;
+                padding: 10px;
+                border-radius: 0;
+                h1{
+                    font-size: 20px;
+                    line-height: 40px;
+    
+                }
+                p{
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }   
+    }
+}

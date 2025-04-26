@@ -1,0 +1,8 @@
+@use 'node_modules/bootstrap/scss/bootstrap';
+@use './header/index.scss' as header;
+@use './footer/footer.scss' as footer;
+@use './ui/index.scss' as ui;
+@use './deal/index.scss' as deal;
+@use './instruction/index.scss' as instruction;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
