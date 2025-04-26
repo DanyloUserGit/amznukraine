@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Якщо використовуєш <Image />, інакше воно не буде працювати
   },
-  basePath: '/amznukraine.git', // !!! Якщо твій репозиторій НЕ на custom domain
-  assetPrefix: '/amznukraine.git',
+  basePath: '/amznukraine', // !!! Якщо твій репозиторій НЕ на custom domain
+  assetPrefix: '/amznukraine',
   eslint: {
     ignoreDuringBuilds: true,
   }
